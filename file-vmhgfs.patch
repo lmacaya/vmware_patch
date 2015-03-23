@@ -52,8 +52,8 @@
     return result;
  }
  
+ -
 +# endif /* if LINUX_VERSION_CODE < KERNEL_VERSION(3, 16, 0) */
--
  #else
  /*
   *----------------------------------------------------------------------
