@@ -24,3 +24,4 @@ Add Shared Folder
 
 Virtual Machine / Share / Settings - Share
 
+Thanks to: "Scott M. Kroll" <skroll@gmail.com>
