@@ -2,7 +2,7 @@
 
 #Enable shared folders on VMWare Fusion 7.0.0 for Ubuntu 14.04.2
 
-Download the inode-vmhgfs.patch and file-vmhgfs.patch patches.
+Download inode-vmhgfs.patch and file-vmhgfs.patch patches.
 
 cd ~
 git clone https://github.com/lmacaya/vmware_patch/
