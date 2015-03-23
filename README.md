@@ -13,7 +13,7 @@ cd /usr/lib/vmware-tools/modules/source/
 sudo tar xf vmhgfs.tar
 cd vmhgfs-only
 sudo patch inode.c < ~/inode-vmhgfs.patch
-sudo patch file-c < ~/file-vmhgfs.patch
+sudo patch file.c < ~/file-vmhgfs.patch
 sudo tar cf vmhgfs.tar vmhgfs-only
 
 Set vmware-tools configuration
