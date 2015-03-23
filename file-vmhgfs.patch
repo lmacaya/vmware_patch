@@ -1,5 +1,5 @@
---- file.c	2015-03-23 12:21:15.946068773 -0300
-+++ file-new.c	2015-03-23 12:21:15.946068773 -0300
+--- /usr/lib/vmware-tools/modules/source/file.c	2015-03-23 12:21:15.946068773 -0300
++++ /usr/lib/vmware-tools/modules/source/file.c	2015-03-23 12:21:15.946068773 -0300
 @@ -75,7 +75,6 @@
  static int HgfsOpen(struct inode *inode,
                      struct file *file);
