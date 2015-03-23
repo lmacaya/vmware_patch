@@ -5,15 +5,15 @@
 Download the inode-vmhgfs.patch and file-vmhgfs.patch patches.
 
 cd ~
-wget http: //
+git clone https://github.com/lmacaya/vmware_patch/
 
-Use the patch files compilation of vmware-tools
+Use vmware-tools compilation file patches
 
-cd / usr / lib / vmware-tools / modules / source /
+cd /usr/lib/vmware-tools/modules/source/
 sudo tar xf vmhgfs.tar
 cd vmhgfs-only
-sudo patch inode.c <~ / inode-vmhgfs.patch
-sudo patch file-c <~ / file-vmhgfs.patch
+sudo patch inode.c < ~/inode-vmhgfs.patch
+sudo patch file-c < ~/file-vmhgfs.patch
 sudo tar cf vmhgfs.tar vmhgfs-only
 
 Set vmware-tools configuration
