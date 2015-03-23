@@ -20,8 +20,8 @@
     .open       = HgfsOpen,
     .llseek     = HgfsSeek,
     .flush      = HgfsFlush,
-+#ifdef VMW_USE_AIO
 -#if defined VMW_USE_AIO
++#ifdef VMW_USE_AIO
     .read       = do_sync_read,
     .write      = do_sync_write,
 +#if LINUX_VERSION_CODE >= KERNEL_VERSION(3, 16, 0)
@@ -30,13 +30,13 @@
 +# else
     .aio_read   = HgfsAioRead,
     .aio_write  = HgfsAioWrite,
+-#else
 +#endif
 +#else /* !VMW_USE_AIO */
--#else
     .read       = HgfsRead,
     .write      = HgfsWrite,
-+#endif /* !VMW_USE_AIO */
 -#endif
++#endif /* !VMW_USE_AIO */
     .fsync      = HgfsFsync,
     .mmap       = HgfsMmap,
     .release    = HgfsRelease,
